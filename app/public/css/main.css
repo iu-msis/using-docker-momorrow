@@ -1,0 +1,145 @@
+body {
+  background-color: lightyellow !important;
+  text-align: center;
+  padding: 0px 10px;
+}
+
+
+p {
+  color: darkblue;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Yeseva One', cursive;
+  color: pink;
+}
+
+h3{
+  font-family: 'Yeseva One';
+  color: darkblue;
+}
+
+#vertical-menu {
+  width: 100px;
+  height: 100% !important;
+  font-family: 'Raleway', sans-serif;
+  font-size:100%;
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  margin-right: 20px;
+  z-index: 1;
+}
+
+#vertical-menu a {
+  background-color: gray;
+  color: white;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+}
+
+#vertical-menu a:hover {
+  background-color: pink;
+  color: darkblue;
+}
+
+#vertical-menu a.active {
+  background-color: white;
+  color: pink;
+}
+
+table {
+  font-family: 'Raleway', sans-serif;
+  color: darkblue !important;
+  text-align: center;
+  width: 80% !important;
+  margin: 0 auto;
+}
+
+.intro {
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Rock Salt', cursive;
+  text-align: center;
+  font-size: 50px !important;
+  color: darkblue;
+}
+
+h2.post-title {
+  font-family: 'Raleway';
+  font-size: 20px !important;
+  font-weight: bold;
+}
+
+h3.post-subtitle {
+  font-size: 15px !important;
+}
+
+p.post-meta {
+  font-size: 12px;
+}
+
+p2 {
+  color: pink;
+  font-weight: 900;
+  font-size: 110%;
+}
+
+img {
+  text-align: center;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+}
+
+.info {
+  text-align: center;
+}
+
+.pic {
+  font-size: 10px;
+  position: center;
+  text-align: center !important;
+}
+
+.container {
+  text-align: center;
+}
+
+form {
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+button {
+  background-color: white !important;
+  color: pink !important;
+  border: 3px solid pink !important;
+}
+
+button:hover {
+  background-color: pink !important;
+  color: darkblue !important;
+}
+
+a.btn {
+  background-color: white !important;
+  color: pink !important;
+  border: 3px solid pink !important;
+}
+
+a.btn:hover {
+  background-color: pink !important;
+  color: darkblue !important;
+}
