@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Raleway|Rock+Salt|Yeseva+One&display=swap" rel="stylesheet">
+  <title>My Books</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div id="vertical-menu">
+    <a class="nav-link" href="index.html">Home</a>
+    <a class="nav-link" href="info.html">My Info</a>
+    <a class="nav-link active" href="books.html">My Books</a>
+  </div>
+<div class="container">
+  <h1><strong>My Favorite Books</strong></h1>
+  <p>Here is a list of my favorite books that I have read throughout my lifetime. I would recommend these books to anyone, no matter your age or background.</p>
+  <table class="table table-light table-bordered table-striped">
+  <thead class = "thead-dark">
+    <tr>
+      <th scope="col">Title</th>
+      <th scope="col">Author(s)</th>
+      <th scope="col">Year Published</th>
+      <th scope="col">Publisher</th>
+      <th scope="col">Page Count</th>
+      <th scope="col">MSRP</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">The Fault in Our Stars</th>
+      <td>John Green</td>
+      <td>2012</td>
+      <td>Dutton Books</td>
+      <td>313</td>
+      <td>$10.39</td>
+    </tr>
+    <tr>
+      <th scope="row">Thirteen Reasons Why</th>
+      <td>Jay Asher</td>
+      <td>2007</td>
+      <td>RazorBill</td>
+      <td>288</td>
+      <td>$9.89</td>
+    </tr>
+    <tr>
+      <th scope="row">The Book Thief</th>
+      <td>Markus Zusak</td>
+      <td>2005</td>
+      <td>Picador</td>
+      <td>584</td>
+      <td>$9.99</td>
+    </tr>
+    <tr>
+      <th scope="row">The Perks of Being a Wallflower</th>
+      <td>Stephen Chbosky</td>
+      <td>1999</td>
+      <td>Pocket Books</td>
+      <td>256</td>
+      <td>$7.62</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<p>Add a new book to the list below:</p>
+<form>
+  <div class="form-group">
+    <label>Title</label>
+    <input type="text" placeholder="Enter book title">
+  </div>
+  <div class="form-group">
+    <label>Author(s)</label>
+    <input type="text"placeholder="Enter author or authors">
+  </div>
+  <div class="form-group">
+    <label>Year Published</label>
+    <input type="number" placeholder="Enter publishing year">
+  </div>
+  <div class="form-group">
+    <label>Publisher</label>
+    <input type="text" placeholder="Enter publisher">
+  </div>
+  <div class="form-group">
+    <label>Page Count</label>
+    <input type="number" placeholder="Enter # of pages">
+  </div>
+  <div class="form-group">
+    <label>MSRP</label>
+    <input type="text" placeholder="Enter current market price">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</body>
+</html>
