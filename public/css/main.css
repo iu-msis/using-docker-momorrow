@@ -181,3 +181,7 @@ th[role=columnheader]:not(.no-sort):hover:after {
 .location {
   text-transform: capitalize;
 }
+
+.name {
+  text-transform: capitalize;
+}
