@@ -12,23 +12,31 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-  <div id="vertical-menu">
+<div id="vertical-menu">
     <a class="nav-link" href="index.html">Home</a>
     <a class="nav-link active" href="info.html">My Info</a>
     <a class="nav-link" href="books.html">My Books</a>
-  </div>
+</div>
+
 <div class="container">
-  <h1><strong>My Info</strong></h1>
-  <p class = "intro">Hi I'm</p>
-  <a href="https://i.pinimg.com/originals/e8/f1/2d/e8f12d089350526e2a66153101b1846c.jpg"><img src="img/wanda.jpg" alt="Wanda" class="center" width="200px"></a>
-  <h2 class ="name">Wanda Mills!</h2>
+  <div id="getRandomUser" class="col-md-3 queueView">
+    <div class="user randomUser">
+      <h1><strong>My Info</strong></h1>
+      <p class = "intro">Hi I'm</p>
+      <div class = "info">
+        <img v-bind:src="image" alt="" class="center" width="200px">
+        <h2 class ="name">{{users.results[0].name.first}} {{users.results[0].name.last}}</h2>
+        <p>Place of Residence: <span class="location"><p2>{{users.results[0].location.state}}<p2></p></span>
+        <p>Birthday: <p2>{{users.results[0].dob.date}}</p>
+        <p>Age: <p2>{{users.results[0].dob.age}}</p2></p>
+        <p>Email: <p2><a href="mailto:wanda.mills@example.com">{{users.results[0].email}}</a></p2></p>
+        <a class="pic" href="https://www.pinterest.com/pin/527273068871092382/" align="middle">Photo Attribution</a>
+      </div>
+    </div>
+  </div>
 </div>
-<div class = "info">
-<p>Country of Origin: <p2>Ireland<p2></p>
-<p>Birthday: <p2>June 6th, 1972</p>
-<p>Age: <p2>47</p2></p>
-<p>Email: <p2><a href="mailto:wanda.mills@example.comn">wanda.mills34@gmail.com</a></p2></p>
-<a class="pic" href="https://www.pinterest.com/pin/527273068871092382/" align="middle">Photo Attribution</a>
-</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="js/randomuser.js"></script>
 </body>
 </html>
