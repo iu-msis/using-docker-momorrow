@@ -19,7 +19,7 @@
 </div>
 
 <div class="container">
-  <div id="getRandomUser" class="col-md-3 queueView">
+  <div id="getRandomUser" class="col-md-3 queueView" v-if="users.results">
     <div class="user randomUser">
       <h1><strong>My Info</strong></h1>
       <p class = "intro">Hi I'm</p>
@@ -27,10 +27,10 @@
         <a v-bind:href="users.results[0].picture.large">
         <img v-bind:src="users.results[0].picture.large" class = "center"></a>
         <h2 class ="name">{{users.results[0].name.first}} {{users.results[0].name.last}}</h2>
-        <p>Country of Origin: <span class="location"><p2>{{users.results[0].nat}}<p2></p></span>
-        <p>Birthday: <p2>{{users.results[0].dob.date}}</p2></p>
-        <p>Age: <p2>{{users.results[0].dob.age}}</p2></p>
-        <p>Email: <p2><a v-bind:href="'mailto:' + users.results[0].email">{{users.results[0].email}}</a></p2></p>
+        <p>Country of Origin: <span class="location">{{users.results[0].nat}}</p></span>
+        <p>Birthday: <span class = "location">{{users.results[0].dob.date}}</p></span>
+        <p>Age: <span class = "location">{{users.results[0].dob.age}}</p></span>
+        <p>Email: <a class = "email"v-bind:href="'mailto:' + users.results[0].email">{{users.results[0].email}}</a></p></span>
         <a class="pic" href="https://randomuser.me" align="middle">Photo Attribution</a>
       </div>
     </div>

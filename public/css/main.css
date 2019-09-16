@@ -180,8 +180,17 @@ th[role=columnheader]:not(.no-sort):hover:after {
 
 .location {
   text-transform: capitalize;
+  color: pink;
+  font-weight: 900;
+  font-size: 110%;
 }
 
 .name {
   text-transform: capitalize;
+}
+
+.email {
+  color: pink;
+  font-weight: 900;
+  font-size: 110%;
 }
