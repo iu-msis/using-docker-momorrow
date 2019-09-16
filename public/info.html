@@ -27,7 +27,7 @@
         <a v-bind:href="users.results[0].picture.large">
         <img v-bind:src="users.results[0].picture.large" class = "center"></a>
         <h2 class ="name">{{users.results[0].name.first}} {{users.results[0].name.last}}</h2>
-        <p>Place of Residence: <span class="location"><p2>{{users.results[0].location.state}}<p2></p></span>
+        <p>Country of Origin: <span class="location"><p2>{{users.results[0].nat}}<p2></p></span>
         <p>Birthday: <p2>{{users.results[0].dob.date}}</p2></p>
         <p>Age: <p2>{{users.results[0].dob.age}}</p2></p>
         <p>Email: <p2><a v-bind:href="'mailto:' + users.results[0].email">{{users.results[0].email}}</a></p2></p>
